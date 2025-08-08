@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Input Data</title>
+  <link rel="stylesheet" href="StyleData.css">
+</head>
+<body>
+
+  <h2>Input Data User</h2>
+
+  <form id="dataForm" autocomplete="off" novalidate>
+    <input type="text" id="nama" placeholder="Nama" required>
+    <input type="number" id="usia" placeholder="Usia" required>
+    <input type="number" id="berat" placeholder="Berat (kg)" required>
+    <input type="number" id="tinggi" placeholder="Tinggi (cm)" required>
+    <button type="submit">Simpan Data</button>
+  </form> 
+
+  <h3>Data Tersimpan</h3>
+  <table id="dataTable">
+    <thead>
+      <tr>
+        <th>No</th>
+        <th>Nama</th>
+        <th>Usia</th>
+        <th>Berat (kg)</th>
+        <th>Tinggi (cm)</th>
+        <th>Edit/Hapus Data</th>
+      </tr>
+    </thead>
+    <tbody><!--Data Muncul Disini Yaaa--></tbody>
+  </table>
+
+  <script src="ScriptData.js"></script>
+</body>
+</html>
